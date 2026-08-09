@@ -1,0 +1,27 @@
+/* Design tokens de Aula Nova (Entrega 1). Contrato visual compartido:
+   cada microfrontend los consume para garantizar coherencia transversal. */
+:root {
+  --primary-500: #0052CC;
+  --primary-600: #0747A6;
+  --success-500: #36B37E;
+  --danger-500: #DE350B;
+  --neutral-900: #172B4D;
+  --neutral-600: #5E6C84;
+  --neutral-200: #DFE1E6;
+  --neutral-050: #F4F5F7;
+  --space-2: 8px;  --space-3: 12px; --space-4: 16px; --space-6: 24px;
+  --radius: 10px;
+  --font: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --tap-min: 44px; /* Ley de Fitts: area tactil minima */
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font); color: var(--neutral-900); background: var(--neutral-050); }
+.mf-card { background:#fff; border:1px solid var(--neutral-200); border-radius:var(--radius); padding:var(--space-4); }
+.btn { min-height:var(--tap-min); border:none; border-radius:var(--radius); padding:0 var(--space-4);
+  font-size:15px; font-weight:600; cursor:pointer; }
+.btn-primary { background:var(--primary-500); color:#fff; }
+.btn-primary:hover { background:var(--primary-600); }
+.btn-ghost { background:transparent; color:var(--primary-500); border:1px solid var(--neutral-200); }
+.chip { min-height:36px; border-radius:999px; padding:0 var(--space-4); border:1px solid var(--neutral-200);
+  background:#fff; cursor:pointer; font-size:14px; }
+.chip.active { background:var(--primary-500); color:#fff; border-color:var(--primary-500); }
