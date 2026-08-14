@@ -1,8 +1,8 @@
-# Aula Nova - Prototipo de Microfrontends (Unidad 4)
+# Aula Nova - Prototipo de Microfrontends 
 
 Evolucion de la arquitectura Front-End de **Aula Nova** hacia un modelo de
 **microfrontends** con **composicion en el cliente** mediante *Module Federation*.
-Continua las Entregas 1 (base UX/UI + React) y 2 (patron Flux).
+
 
 ## Arquitectura
 
@@ -51,23 +51,13 @@ npm run dev:catalog      # http://localhost:5001  (catalogo aislado)
 npm run dev:enrollment   # http://localhost:5002  (wizard aislado)
 ```
 
-## Recorrido de demostracion (para el video, 3-5 min)
-1. Abrir el shell y filtrar el catalogo por categoria (Ley de Hick).
-2. Pulsar "Inscribirme": el Catalogo emite un evento de dominio; el shell
-   compone el microfrontend de Inscripcion (integracion en runtime).
-3. Recorrer el wizard de 3 pasos con barra de progreso (Ley de Miller) y
-   confirmar; observar el estado de exito o el manejo de error.
-4. Abrir cada remoto por separado (5001 / 5002) para evidenciar la autonomia.
-5. Mostrar `shell/vite.config.ts` (remotes) y `mf-*/vite.config.ts` (exposes).
 
-## Leyes UX heredadas (Entrega 1/2)
+## Leyes UX heredadas
 - **Hick:** agrupacion por categorias en el catalogo.
 - **Miller:** wizard de 3 pasos con barra de progreso.
 - **Fitts:** CTAs con area tactil >= 44 px.
 
-## Evidencias de la entrega
-- Repositorio: (reemplazar por la URL de GitHub)
-- Video: (reemplazar por el enlace de YouTube / Drive)
+
 
 ## Estructura
 ```
