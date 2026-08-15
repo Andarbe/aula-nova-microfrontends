@@ -1,6 +1,6 @@
 # Aula Nova — Microfrontends (composición en el cliente)
 
-Prototipo de *** · Arquitectura Front-End**. Aplica **microfrontends con
+Prototipo de **Arquitectura Front-End**. Aplica **microfrontends con
 composición en el cliente** (§4.1) bajo el **patrón de Shell / contenedor principal**
 (§5.2): una sola página integra dinámicamente microfrontends independientes y, al
 interactuar, la sección de contenido se **actualiza** con el microfrontend
