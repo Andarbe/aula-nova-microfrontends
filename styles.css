@@ -1,0 +1,44 @@
+/* Design tokens de Aula Nova (heredados de la Entrega 1) */
+:root{
+  --primary-500:#0052CC; --primary-600:#0747A6; --success-500:#36B37E; --danger-500:#DE350B;
+  --neutral-900:#172B4D; --neutral-600:#5E6C84; --neutral-200:#DFE1E6; --neutral-050:#F4F5F7;
+  --space-2:8px; --space-3:12px; --space-4:16px; --space-6:24px; --radius:10px; --tap-min:44px;
+  --font:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--font);color:var(--neutral-900);background:var(--neutral-050)}
+
+/* --- Shell --- */
+.shell-header{display:flex;align-items:center;gap:var(--space-6);padding:0 var(--space-6);
+  height:64px;background:#fff;border-bottom:1px solid var(--neutral-200)}
+.brand{font-size:20px;font-weight:700;display:flex;align-items:center;gap:8px}
+.brand span{color:var(--neutral-900)}
+.shell-nav{display:flex;gap:var(--space-2)}
+.nav-btn{min-height:40px;padding:0 18px;border:none;border-radius:8px;background:var(--primary-500);
+  color:#fff;font-size:15px;font-weight:600;cursor:pointer;transition:background .15s}
+.nav-btn:hover{background:var(--primary-600)}
+.nav-btn.active{background:var(--primary-600);box-shadow:0 0 0 3px rgba(7,71,166,.2)}
+.contenido{max-width:920px;margin:0 auto;padding:var(--space-6)}
+.shell-footer{text-align:center;color:var(--neutral-600);font-size:12px;padding:var(--space-4);
+  border-top:1px solid var(--neutral-200);margin-top:var(--space-6)}
+
+/* --- UI compartida --- */
+.mf-title{display:flex;align-items:center;gap:10px;justify-content:center;margin:0 0 4px}
+.mf-sub{text-align:center;color:var(--neutral-600);margin:0 0 var(--space-6)}
+.card{background:#fff;border:1px solid var(--neutral-200);border-radius:var(--radius);padding:var(--space-4)}
+.btn{min-height:var(--tap-min);border:none;border-radius:var(--radius);padding:0 var(--space-4);
+  font-size:15px;font-weight:600;cursor:pointer}
+.btn-primary{background:var(--primary-500);color:#fff}
+.btn-primary:hover{background:var(--primary-600)}
+.btn-ghost{background:#fff;color:var(--primary-500);border:1px solid var(--neutral-200)}
+.chip{min-height:36px;border-radius:999px;padding:0 var(--space-4);border:1px solid var(--neutral-200);
+  background:#fff;cursor:pointer;font-size:14px}
+.chip.active{background:var(--primary-500);color:#fff;border-color:var(--primary-500)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:var(--space-4)}
+.row{display:flex;gap:var(--space-2);flex-wrap:wrap}
+.fade{animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.progress{background:var(--neutral-200);border-radius:999px;height:8px;margin:var(--space-4) 0}
+.progress > i{display:block;height:8px;border-radius:999px;background:var(--success-500);transition:width .3s}
+label{display:block;font-size:14px;color:var(--neutral-600);margin-bottom:6px}
+select{width:100%;height:var(--tap-min);border:1px solid var(--neutral-200);border-radius:8px;padding:0 10px;font-size:15px}

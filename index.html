@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aula Nova · Microfrontends</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- SHELL (contenedor anfitrion): cabecera + navegacion + region de contenido -->
+  <header class="shell-header">
+    <div class="brand">🎓 <span>Aula Nova</span></div>
+    <nav class="shell-nav" id="nav">
+      <button class="nav-btn" data-mf="catalogo">Catálogo</button>
+      <button class="nav-btn" data-mf="inscripcion">Inscripción</button>
+      <button class="nav-btn" data-mf="perfil">Perfil</button>
+    </nav>
+  </header>
+
+  <!-- La seccion se ACTUALIZA con el contenido del microfrontend activo -->
+  <main id="contenido" class="contenido"></main>
+
+  <footer class="shell-footer">Shell (host) · cada botón carga dinámicamente un microfrontend independiente</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
