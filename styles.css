@@ -9,7 +9,7 @@
 body{margin:5px;font-family:var(--font);color:var(--neutral-900);background:var(--neutral-050)}
 
 /* --- Shell --- */
-.shell-header{display:flex;align-items:center;justify-content:center;gap:var(--space-6);padding: 20px; var(--space-6);
+.shell-header{display:flex;align-items:center;justify-content:center;gap:var(--space-6);padding: 20px 0;
   height:64px;background:#fff;border-bottom:1px solid var(--neutral-200)}
 .brand{font-size:20px;font-weight:700;display:flex;align-items:center;gap:8px}
 .brand span{color:var(--neutral-900)}
